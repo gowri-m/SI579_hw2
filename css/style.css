@@ -1,0 +1,248 @@
+body {
+    font-family: 'Roboto Slab', sans-serif, 'Arial';  
+    background-color: #cedad9; 
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.menu{
+  margin: 30px;
+}
+
+.skip a:focus{
+  position: absolute;
+  top: 10px;
+}
+
+#capital-main > p{
+  margin: 50px;
+}
+
+#home-main > p{
+  margin: 20px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Slab', sans-serif, 'Times New Roman';
+  justify-content: space-between;
+  margin: 40px;
+}
+
+
+header > h1{
+    font-size: 2em;
+    align-content: center;
+    text-align: center;
+}
+
+.logo{
+  -webkit-animation: logo_grow;
+  animation: logo_grow;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3;
+}
+
+@-webkit-keyframes logo_grow{
+ from{opacity: 0%;}
+ to{opacity: 100%;}
+
+}
+
+@keyframes logo_grow{
+ from{opacity: 0%;}
+ to{ opacity: 100%;}
+
+} 
+
+  .nav_links{
+    display: flex;
+  } 
+
+ul li{
+  display: block;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.nav_links a:link{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em; 
+}
+.nav_links a:visited{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.nav_links a:focus{
+  text-decoration:dotted;
+  color: blue;
+}
+
+#active a{
+  text-decoration:underline;
+  color: teal;
+  font-size: 2em;
+}
+
+main p {
+  line-height:35px;
+  font-size: 20px;
+}
+  
+
+#p1{
+  text-align: left;
+}
+
+#p2{
+  text-align: right;
+}
+
+.hero-image{
+  height: 450px;
+  background-image: url(../imgs/vs2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-image-text{
+  text-align: center;
+  top:140px;
+  font-size: 12vw;
+  color: white;
+  opacity: 85%;
+}
+
+#things-to-do{
+  margin: 30px 50px;
+  font-size: 35px;
+}
+
+.container-flex{
+  display: none;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 30px;
+  margin: 50px;
+}
+
+.nandi-image,.food-image,.lalbagh-image, .brigade-image{
+  grid-column: 1/-1;
+  max-height: 650px;
+  overflow:hidden;
+  max-width: 950px;
+}
+
+.nandi, .nandi-image{
+  grid-row: 1;
+}
+
+.nandi, .food, .lalbagh, .brigade{
+  grid-column: 2/span 2;
+  text-align: center;
+}
+
+.food, .food-image{
+  grid-row: 2;
+}
+
+.lalbagh,.lalbagh-image{
+  grid-row: 3;
+}
+
+.brigade, .brigade-image{
+  grid-row: 4;
+}
+
+
+.text{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  align-self: center;
+
+}
+
+
+footer {
+  position: fixed;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 0;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+  background-color: #337c36;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#email{
+  display: block;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+
